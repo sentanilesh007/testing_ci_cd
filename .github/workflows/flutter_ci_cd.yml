@@ -34,7 +34,7 @@ jobs:
     needs: build
     steps:
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@<VERSION_NUMBER>
+        uses: docker://w9jds/firebase-action:master
         with:
           args: deploy
         env:
