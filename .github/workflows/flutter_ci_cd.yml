@@ -26,13 +26,13 @@ jobs:
         run: flutter test
 
   deploy:
-    name: Deploy to Firebase (Example)
+    name: Deploy
     runs-on: ubuntu-latest
     needs: build
     steps:
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@v1
+        uses: w9jds/firebase-action@v1.1.0
         with:
-          args: deploy --only hosting # Change this to your deployment process
+          args: deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
