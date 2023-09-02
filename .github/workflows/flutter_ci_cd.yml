@@ -42,5 +42,5 @@ deploy:
         args: deploy
       env:
         FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-      working-directory: ./github/workflows/flutter_ci_cd.yml
+        working-directory: ./github/workflows/flutter_ci_cd.yml
 
