@@ -35,7 +35,8 @@ jobs:
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v2
+
         with:
-          ref: deploy
+          args: deploy
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
