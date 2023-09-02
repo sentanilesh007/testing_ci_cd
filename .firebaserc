@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "ci-cd-testing-8e5e1"
-  }
+    "default": "ci-cd-testing-8e5e1",
+    "y": "ci-cd-testing-8e5e1"
+  },
+  "targets": {},
+  "etags": {}
 }
