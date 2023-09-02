@@ -39,4 +39,4 @@ jobs:
           args: deploy --only functions:myFunction
         env:
           FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_PATH: "Google Cloud Functions/myFunction"
+          PROJECT_PATH: "Google Cloud Functions/github/workflows/flutter_ci_cd.yml"
