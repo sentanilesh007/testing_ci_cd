@@ -36,8 +36,15 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v2
 
+      - name: Set Up Firebase
+        run: |
+          firebase use default 
+
       - name: Deploy to Firebase
-        uses: docker://w9jds/firebase-action:master
+        run: |
+          firebase deploy --token "$FIREBASE_TOKEN" --only hosting  # Adjust the options as needed
+            
+
         with:
           args: deploy
         env:
