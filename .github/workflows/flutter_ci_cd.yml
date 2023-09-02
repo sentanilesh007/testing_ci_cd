@@ -34,9 +34,8 @@ jobs:
     needs: build
     steps:
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@master
+        uses: docker://w9jds/firebase-action:master
         with:
-          args: deploy --only functions:myFunction
-        env:
-          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
-          PROJECT_PATH: "Google Cloud Functions/github/workflows/flutter_ci_cd.yml"
+          args: deploy
+#        env:
+#          FIREBASE_TOKEN: ${{ secrets.FIREBASE_TOKEN }}
